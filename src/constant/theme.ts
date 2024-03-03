@@ -107,56 +107,56 @@ export const BORDERRADIUS: IBorderRadius = {
 
 const tintColorLight = "#12121D";
 const tintColorDark = "#fff";
-
+const gray = "#B2B2B2";
 interface IMode {
-  textHex: string;
-  backgroundHex: string;
-  tintHex: string;
-  tabIconDefaultHex: string;
-  tabIconSelectedHex: string;
+  text: string;
+  background: string;
+  tint: string;
+  tabIconDefault: string;
+  tabIconSelected: string;
 }
 interface IColor {
-  primaryHex: string;
-  secondaryHex: string;
-  primaryDarkGreyHex: string;
-  secondaryPinkHex: string;
-  backgroundHex: string;
-  lightGrayHex: string;
-  darkGrayHex: string;
-  transparentHex: string;
-  errorHex: string;
-  warningHex: string;
-  successHex: string;
-  infoHex: string;
+  primary: string;
+  secondary: string;
+  primaryDarkGrey: string;
+  secondaryPink: string;
+  background: string;
+  lightGray: string;
+  darkGray: string;
+  transparent: string;
+  error: string;
+  warning: string;
+  success: string;
+  info: string;
   light: IMode;
   dark: IMode;
 }
 
 export const COLORS: IColor = {
-  primaryHex:  "#172731",
-  primaryDarkGreyHex:  "#222E36",
-  secondaryHex: "#7A182A",
-  secondaryPinkHex:"#B18787",
-  backgroundHex: "#EBEBEB",
-  lightGrayHex: "#b2b2b236",
-  darkGrayHex: "#606060",
-  errorHex: "#DA1414",
-  warningHex: "#FF9605",
-  infoHex: "#385EF4",
-  successHex: "#19A83D",
-  transparentHex: "#fafafa00",
+  primary:  "#172731",
+  primaryDarkGrey:  "#222E36",
+  secondary: "#7A182A",
+  secondaryPink:"#B18787",
+  background: "#EBEBEB",
+  lightGray: "#b2b2b236",
+  darkGray: "#606060",
+  error: "#DA1414",
+  warning: "#FF9605",
+  info: "#385EF4",
+  success: "#19A83D",
+  transparent: "#fafafa00",
   light: {
-    textHex: tintColorLight,
-    backgroundHex: "#ffff",
-    tintHex: tintColorDark,
-    tabIconDefaultHex: tintColorLight,
-    tabIconSelectedHex: tintColorDark,
+    text: "#000",
+    background: "#fff",
+    tint: tintColorLight,
+    tabIconDefault: gray,
+    tabIconSelected: tintColorLight,
   },
   dark: {
-    textHex: tintColorDark,
-    backgroundHex: "#ffff",
-    tintHex: tintColorLight,
-    tabIconDefaultHex: tintColorDark,
-    tabIconSelectedHex: tintColorLight,
+    text: "#fff",
+    background: "#000",
+    tint: tintColorDark,
+    tabIconDefault: gray,
+    tabIconSelected: tintColorDark,
   },
 };
